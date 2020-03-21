@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Cipher</title>
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="images/png" href="{{url_for('static', filename='images/logo.png')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="background-image: linear-gradient(to right, #F09291, #BE3262);">
+
+        <h1>Cipher</h1>
+
+        <form name="form1" action="." method="post">
+            <input type="text" id="fname" name="test" value="Enter Text Here"><br>
+        </form>
+
+        <div class="content">
+            <div>
+                <h2>Morse</h2>
+                <h3>{{m1}}</h3>
+            </div>
+            <div>
+                <h2>ASCII</h2>
+                <h3>{{a1}}</h3>
+            </div>
+            <div>
+                <h2>Binary</h2>
+                <h3>{{b1}}</h3>
+            </div>
+        </div>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arvo', sans-serif;
+        }
+
+        h1, h2, h3, p{
+            color: #fff;
+        }
+
+        .content{
+            display: grid;
+            grid-gap: 60px;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+
+        h1{
+            margin-top: 100px;
+            font-size: 80px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        p{
+            letter-spacing: 60px;
+            text-align: center;
+            margin-top: 200;
+            font-size: 10;
+            text-indent: 5.1em;
+        }
+
+        input[type=text] {
+            font-family: 'Arvo', sans-serif;
+            margin-top: 60px;
+            border: none;
+            border-bottom: 2px solid white;
+            background: none;
+            color: white;
+        }
+
+        @media screen and (max-width: 580px) {
+            .content {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
+      }
+}
+    </style>
+    </body>
+</html>
