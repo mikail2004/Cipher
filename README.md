@@ -1,2 +1,2 @@
 # Cipher
-A simple web-app that takes in text and encrypts in into Binary, ASCII &amp; Morse-Code.
+A simple Python-Eel based web-app that takes in text and encrypts in into Binary, ASCII &amp; Morse-Code.
